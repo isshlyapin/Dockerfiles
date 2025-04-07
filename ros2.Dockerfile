@@ -26,3 +26,7 @@ RUN apt install ros-jazzy-ros-gz -y
 RUN apt install -y git-all cmake gcc g++
 
 RUN curl -LsSf https://astral.sh/uv/install.sh | sh 
+
+RUN wget https://apt.llvm.org/llvm.sh
+RUN chmod +x llvm.sh
+RUN ./llvm.sh 19 all
