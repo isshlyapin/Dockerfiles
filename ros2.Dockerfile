@@ -19,9 +19,10 @@ RUN apt update && apt install ros-dev-tools -y
 
 RUN apt update && apt upgrade -y
 
-RUN apt install ros-jazzy-desktop -y
-
-RUN apt install ros-jazzy-ros-gz -y
+RUN apt install -y ros-jazzy-ros-gz
+RUN apt install -y ros-jazzy-desktop
+RUN apt install -y ros-jazzy-magic-enum
+RUN apt install -y ros-jazzy-eigen3-cmake-module
 
 RUN apt install -y git-all cmake gcc g++
 
